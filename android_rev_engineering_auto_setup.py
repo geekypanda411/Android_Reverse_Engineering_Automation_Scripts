@@ -118,7 +118,7 @@ def manifest_main_launcher_parser(apktool_out_path):
                                 else:
                                         useful_line_list.append(line)
                         elif ((useful_block_flag == 1) and (main_found_flag == 1) and (launcher_found_flag == 1)):
-                                if (("</activity>" in line) or ("</receiver>" in line) or ("</service>" in line) or ("</provider>" in line)):
+                                if (("</activity" in line) or ("</receiver" in line) or ("</service" in line) or ("</provider" in line)):
                                         useful_line_list.append(line)
                                         final_output_list.append(useful_line_list)
                                         useful_line_list = []
